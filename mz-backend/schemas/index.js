@@ -1,1 +1,2 @@
-export const schemaTypes = []
+import apropos from './apropos'
+export const schemaTypes = [apropos]
