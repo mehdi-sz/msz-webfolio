@@ -13,10 +13,10 @@ const Navbar = () => {
         <span>MZTECH</span>
       </div>
       <ul className="app__navbar-links">
-        {['accueil', 'a propos', 'projets', 'compétences', 'contact'].map((item) => (
+        {['accueil', 'a propos', 'projets', 'skills', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href={`${item}`}>{item}</a>
           </li>
         ))}
       </ul>
@@ -31,7 +31,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['accueil', 'a propos', 'projets', 'compétences', 'contact'].map((item) => (
+              {['accueil', 'a propos', 'projets', 'skills', 'contact'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
